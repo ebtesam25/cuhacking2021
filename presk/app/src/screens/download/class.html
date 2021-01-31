@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<link rel="stylesheet" href="class.css">
+<script src="webgazer.js" type="text/javascript" ></script>
+<script>
+    webgazer.setGazeListener(function(data, elapsedTime) {
+    if (data == null) {
+        return;
+    }
+    console.log(data)
+    console.log('Concentrate!')
+    var xprediction = data.x; //these x coordinates are relative to the viewport
+    var yprediction = data.y; //these y coordinates are relative to the viewport
+    console.log(elapsedTime); //elapsed time is based on time since begin was called
+}).begin();</script>
+
+<body>
+
+    <div>
+       
+       
+        <div style="align-content:'left'; width: '100%'; display:'inline-block'; text-align:'left'; align-self:'left'; position:'absolute'; left:0; top:0">
+        <img src="../../assets/logo.png" height="40vh" width="130vh" style="margin-right:'2.5%'; float:'left';"></img>
+        </div >
+        <div style="margin-top:'2.5%'; align; align-content:left;">
+            <div style="font-family:'Montserrat'; line-height:'100%'; font-size:'3vh'; margin-top:'5%'; color:white;">
+            Mathematics
+            </div>
+           <iframe src="https://www.youtube.com/embed/QVKj3LADCnA?list=PL49CF3715CB9EF31D" height="975" width="1850" style="align-self: center;"></iframe>
+                 
+            </div>
+    </div>  
+</body>
+</html>
